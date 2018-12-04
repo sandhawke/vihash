@@ -1,6 +1,6 @@
 {
   "name": "vihash",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Compute the \"version-integrity\" hash of a string (base64url)",
   "main": "index.js",
   "scripts": {
