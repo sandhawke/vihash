@@ -4,7 +4,7 @@ const debug = require('debug')('vihash')
 function vihash (text, algo = 'sha256') {
   const hash = crypto.createHash(algo)
   hash.update(text)
-  const result = 'sha256-' + url64(hash.digest('base64'))
+  const result = algo + '-' + url64(hash.digest('base64'))
   debug('%s from %o', result, text.slice(0,30) + (text.length>30?'...':''))
   return result
 }
